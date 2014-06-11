@@ -4,20 +4,20 @@
     <description>mustache.php - Logic-less {{mustache}} templates with PHP.</description>
 
     <parameters>
-        <param name="mustache-php" label="mustache.php download URL" type="text"
+        <param name="mustachephp" label="mustache.php download URL" type="text"
                volatile="yes" onupgrade="W"
                default="ftp://ftp.anakeen.com/third-party/mustache.php-@VERSION@.zip"/>
     </parameters>
 
     <post-install>
-        <download href="@mustache-php" action="programs/mustache.php_install">
+        <download href="@mustachephp" action="programs/mustache.php_install">
             <label lang="en">Download and install mustache.php @VERSION@
             </label>
         </download>
     </post-install>
 
     <post-upgrade>
-        <download href="@mustache-php" action="programs/mustache.php_install">
+        <download href="@mustachephp" action="programs/mustache.php_install">
             <label lang="en">Download and install mustache.php @VERSION@
             </label>
         </download>
